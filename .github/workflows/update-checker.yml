@@ -13,8 +13,8 @@
 name: Update Checker
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/JohnnyDu0815/immortalwrt-mt798x-24.10
+  REPO_BRANCH: 2410
 
 on:
   workflow_dispatch:
