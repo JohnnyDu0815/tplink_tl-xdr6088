@@ -18,7 +18,7 @@ on:
 
 env:
   REPO_URL: https://github.com/JohnnyDu0815/immortalwrt-mt798x-24.10
-  REPO_BRANCH: 2410
+  REPO_BRANCH: 2410-6.6
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: tplink_tl-xdr6088.config
   DIY_P1_SH: diy-part1.sh
