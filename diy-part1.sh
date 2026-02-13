@@ -16,8 +16,8 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 
-#echo 'src-git JohnnyDu0815 https://github.com/JohnnyDu0815/small-package' >>feeds.conf.default
+echo 'src-git JohnnyDu0815 https://github.com/JohnnyDu0815/small-package' >>feeds.conf.default
 #echo 'src-git JohnnyDu0815 https://github.com/JohnnyDu0815/openwrt-packages' >>feeds.conf.default
 
-git clone https://github.com/JohnnyDu0815/luci-app-adguardhome.git package/luci-app-adguardhome
-chmod -R 755 ./package/luci-app-adguardhome/*
+#git clone https://github.com/JohnnyDu0815/luci-app-adguardhome.git package/luci-app-adguardhome
+#chmod -R 755 ./package/luci-app-adguardhome/*
