@@ -19,11 +19,5 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
-# Set Rust build arg llvm.download-ci-llvm to false.
-RUST_MAKEFILE="feeds/packages/lang/rust/Makefile"
-if [[ -f "${RUST_MAKEFILE}" ]]; then
-  printf "Modifying %s...\n" "${RUST_MAKEFILE}"
-  sed -i "s/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/" "${RUST_MAKEFILE}"
-else
-  echo "File ${RUST_MAKEFILE} does not exist." >&2
-fi
+sed -i 's/--set=llvm\.download-ci-llvm=false/--set=llvm.download-ci-llvm=true/' feeds/packages/lang/rust/Makefile
+grep -q -- '--ci false \\' feeds/packages/lang/rust/Makefile || sed -i '/x\.py \\/a \        --ci false \\' feeds/packages/lang/rust/Makefile
