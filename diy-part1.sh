@@ -20,5 +20,8 @@
 
 #echo 'src-git JohnnyDu0815 https://github.com/JohnnyDu0815/openwrt-packages' >>feeds.conf.default
 
-#git clone https://github.com/JohnnyDu0815/luci-app-adguardhome.git package/luci-app-adguardhome
-#chmod -R 755 ./package/luci-app-adguardhome/*
+git clone https://github.com/JohnnyDu0815/luci-app-adguardhome.git package/luci-app-adguardhome
+chmod -R 755 ./package/luci-app-adguardhome/*
+
+git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+rm -rf feeds/luci/applications/luci-app-openclash
